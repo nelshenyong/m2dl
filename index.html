@@ -219,8 +219,10 @@
         }
 
         function playServer() {
+            const serverName = "Mario 2D Lover";
             const serverIp = "mario2dlover.aternos.me";
-            const url = `minecraft://?addExternalServer=Mario 2D Lover|${serverIp}|25447`;
+            const port = "25447";
+            const url = `minecraft://?addExternalServer=${serverName}|${serverIp}:${port}`;
             window.location.href = url;
         }
     </script>
